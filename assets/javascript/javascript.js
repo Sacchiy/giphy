@@ -27,16 +27,17 @@ $(document).ready(function() {
         })
         // After data comes back from the request
         .then(function(response) {
-          
+        
+        $('#gifs-appear-here').empty();
+        
         // storing the data from the AJAX request in the results variable
         var results = response.data;
 
         // Looping through each result item
             for (var i = 0; i < 10; i++) {
-
             // Creating and storing a div tag
             var animalDiv = $("<div>");
-
+            
             // Creating a paragraph tag with the result item's rating
             var p = $("<p>").text("Rating: " + results[i].rating);
 
