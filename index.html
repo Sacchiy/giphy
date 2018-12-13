@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset = "UTF-8">
+<title>Giphy Page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/javascript.js"></script>
+</head>
+
+<body>
+<div class="container" id="button-container">
+    <div class="row">
+        <div class="col-sm-12">
+        <div id="buttons"></div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container" id="maincontent">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="gifs" id="gifs-appear-here"></div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+            <form id="add-animal">
+                <b><label for='add-animal'>Add an animal</label></b>
+                <p><input id="entered-animal" type="text"></p>
+                <input class="btn btn-primary" id="submit-button" type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
