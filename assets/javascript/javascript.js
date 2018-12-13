@@ -11,7 +11,7 @@ $(document).ready(function() {
     
     //for loop anilams and display them in buttons
     for (var i = 0; i < animals.length; i++){
-            $('#buttons').append($('<button/>', {type: 'button', id: 'animal' + i, text: animals[i]}));
+            $('#buttons').append($('<button/>', {class: 'animalButton', type: 'button', id: 'animal' + i, text: animals[i]}));
         };
     //add buttons data
     for (var i = 0; i < animals.length; i++) {
@@ -29,14 +29,14 @@ $(document).ready(function() {
         .then(function(response) {
         
         $('#gifs-appear-here').empty();
-        
+
         // storing the data from the AJAX request in the results variable
         var results = response.data;
 
         // Looping through each result item
             for (var i = 0; i < 10; i++) {
             // Creating and storing a div tag
-            var animalDiv = $("<div>");
+            var animalDiv = $("<div id='animalDiv'>");
             
             // Creating a paragraph tag with the result item's rating
             var p = $("<p>").text("Rating: " + results[i].rating);

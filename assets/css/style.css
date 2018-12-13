@@ -1,3 +1,30 @@
 #button-container {
     margin:20px;
 }
+
+#animalDiv{
+    float:left;
+    padding: 10px;
+}
+
+.animalButton{
+    color: white;
+    border-radius: 5px;
+    background: #73AD21;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 2px; 
+}
+
+#entered-animal {
+    border-radius: 5px;
+}
+
+#submit-button{
+    color: white;
+    border: None;
+    border-radius: 5px;
+    background: #73AD21;
+    padding: 0,5,0,5;
+    margin: 2px; 
+}
