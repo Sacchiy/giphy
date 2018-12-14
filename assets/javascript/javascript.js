@@ -4,9 +4,10 @@ $(document).ready(function() {
 
     //push input value to an array when submit button is clicked
     $('#submit-button').on('click',function(){
+        event.preventDefault();
         var string = $('input:text').val();
-        alert(string);     
-        //animals.push(string);
+        console.log(string);     
+        animals.push(string);
     });
     
     //for loop anilams and display them in buttons
