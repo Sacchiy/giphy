@@ -1,3 +1,7 @@
+body {
+    background-image: url('../images/canvas-texture-paper.jpg')
+}
+
 #button-container {
     margin:20px;
 }
@@ -27,4 +31,16 @@
     background: #73AD21;
     padding: 0,5,0,5;
     margin: 2px; 
+}
+
+#rating{
+font-weight: bold;
+}
+
+#add-animal{
+    width:100%;
+}
+
+#input-box{
+    width: 100%;
 }
